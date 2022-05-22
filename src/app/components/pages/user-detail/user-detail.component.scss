@@ -1,0 +1,30 @@
+.imagen{
+    width: 70%;
+    margin: 10px;
+}
+  
+.content{
+    align-items: center;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px;
+  }
+  
+.grid-item {
+    background: #d4d8f1;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 5px;
+    cursor: pointer;
+  }
+
+.spaces{
+    line-height: 15px;
+}

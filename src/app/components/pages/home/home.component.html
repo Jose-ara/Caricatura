@@ -1,0 +1,18 @@
+<div class="content">
+    <div class="filtro">
+        <form (ngSubmit)="enviarTerminoBusqueda()">
+            <div>
+                <div class="actInput">
+                    <input type="text" [(ngModel)]="nombreUsuario"
+                    name="users" placeholder="Filtrar Personaje">
+                </div>
+                <div class="actButton">
+                    <button type="submit">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <app-list-users></app-list-users>
+</div>

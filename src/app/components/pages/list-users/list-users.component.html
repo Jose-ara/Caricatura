@@ -1,0 +1,26 @@
+<div class="content">
+    <div class="grid-container">
+        <div [routerLink]="['/home/user']" class="grid-item" *ngFor="let list of userArray"
+            (click)="detalleUser(list.id)">
+            <img class="imagen" [src]="list.image" alt="Avatar">
+            <div><h4><b>{{list.name}}</b></h4></div>
+            <p>{{list.gender}}</p>
+            <p>{{list.species}}</p>
+            <div class="spaces">
+                <p>{{list.location.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="btnCenter" *ngIf="userXpag > 0">
+        <ul>
+            <div class="alinearButtons" *ngIf="paginaAnteriorClass()">
+                <button class="button"  (click)="paginaAnterior()">&laquo;Anteriro</button>
+            </div>
+
+            <div class="alinearButtons" *ngIf="paginaSiguienteClass()">
+                <button class="button"  (click)="paginaSiguiente()">Siguiente&raquo;</button>
+            </div>
+        </ul>
+      </div>
+</div>
+

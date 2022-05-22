@@ -1,0 +1,18 @@
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #14179c;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 92% 8%;
+  }
+
+.imgShape{
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
